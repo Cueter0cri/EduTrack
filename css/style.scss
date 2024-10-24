@@ -1,0 +1,520 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .log-in-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 50px;
+        border-radius: 30px;
+        background: rgb(255, 255, 255);
+        width: 500px;
+        .title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            h1 {
+                color: rgb(30, 30, 30);
+                font-family: SF Pro;
+                font-size: 31px;
+                font-weight: 510;
+                line-height: 37px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+        }
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .input-loging {
+                width: 500px;
+                height: 70px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+                box-sizing: border-box;
+                border: 0.5px solid rgba(30, 30, 30, 0.2);
+                border-radius: 20px;
+                background: rgb(255, 255, 255);
+                color: rgb(181, 181, 181);
+                font-family: SF Pro;
+                font-size: 22px;
+                font-weight: 400;
+            }
+        }
+        .actions {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            width: 100%;
+            button {
+                display: flex;
+                height: 70px;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 20px;
+                border-radius: 20px;
+                background: rgb(85, 127, 245);
+                border: none;
+                a {
+                    color: rgb(255, 255, 255);
+                    font-family: SF Pro;
+                    font-size: 24px;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+            }
+            .text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 10px;
+                p {
+                    color: rgb(53, 53, 53);
+                    font-family: SF Pro;
+                    font-size: 20px;
+                    font-weight: 274;
+                    line-height: 24px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                }
+                a {
+                    color: rgb(79, 123, 244);
+                    text-decoration: none;
+                }
+            }
+        }
+        .second-variant {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            p {
+                color: rgb(172, 173, 172);
+                font-family: SF Pro;
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+        .integrations {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            .int-block {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                padding: 10px;
+                border-radius: 10px;
+                background: rgb(255, 255, 255);
+                width: 140px;
+                height: 60px;
+                cursor: pointer;
+                p {
+                    color: rgb(0, 0, 0);
+                    font-family: SF Pro;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+    a {
+        color: rgb(79, 123, 244);
+        font-family: SF Pro;
+        font-size: 36px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        a {
+            text-decoration: none;
+            color: rgb(30, 30, 30);
+            font-family: SF Pro;
+            font-size: 28px;
+            font-weight: 510;
+        }
+        .chosen {
+            color: rgb(79, 123, 244);
+            font-family: SF Pro;
+            font-size: 28px;
+            font-weight: 700;
+        }
+    }
+    .profile {
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0px 200px;
+    background: rgb(248, 248, 248);
+    margin-bottom: 50px;
+}
+
+.main-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    .title {
+        h1 {
+            font-family: SF Pro;
+            font-size: 30px;
+            font-weight: 590;
+            color: rgb(30, 30, 30);
+        }
+        span {
+            color: rgb(79, 123, 244);
+        }
+    }
+    .info-block {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        width: 100%;
+        .goal-block {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            .goals {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                height: 100%;
+                .goal {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 10px;
+                    padding: 20px;
+                    border-radius: 20px;
+                    background: rgb(255, 255, 255);
+                    // width: 260px;
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        h2 {
+                            color: rgb(79, 123, 244);
+                            font-family: SF Pro;
+                            font-size: 24px;
+                            font-weight: 700;
+                        }
+                        p {
+                            color: rgb(79, 123, 244);
+                            font-family: SF Pro;
+                            font-size: 16px;
+                            font-weight: 510;
+                        }
+                    }
+                    .time {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 15px;
+                        // padding: 10px 20px;
+                        .section {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 5px;
+                            align-items: center;
+                            justify-content: center;
+                            p {
+                                color: rgb(79, 123, 244);
+                                font-family: SF Pro;
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+                .add-goal {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 20px;
+                    border-radius: 20px;
+                    background: rgb(255, 255, 255);
+                    width: 260px;
+                    a {
+                        text-decoration: none;
+                    }
+                    h2 {
+                        color: rgb(79, 123, 244);
+                        font-family: SF Pro;
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        h1 {
+            color: rgb(30, 30, 30);
+            font-family: SF Pro;
+            font-size: 36px;
+            font-weight: 590;
+        }
+        .calendar-block {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            width: 100%;
+            .calendar {
+                display: flex;
+                flex-direction: column;
+                .days {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: space-between;
+                    p {
+                        color: rgb(30, 30, 30);
+                        font-family: SF Pro;
+                        font-size: 18px;
+                        font-weight: 700;
+                        width: 217px;
+                        height: 70px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10;
+                        padding: 10px;
+                        box-sizing: border-box;
+                        border-bottom: 1px solid rgba(30, 30, 30, 0.2);
+                        border-left: 1px solid rgba(30, 30, 30, 0.2);
+                        border-top: 1px solid rgba(30, 30, 30, 0.2);
+                    }
+                    p:nth-child(7) {
+                        border-right: 1px solid rgba(30, 30, 30, 0.2);
+                    }
+                }
+                .days-plan {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: space-between;
+                    .plan {
+                        width: 217px;
+                        height: 310px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        padding: 10px;
+                        box-sizing: border-box;
+                        border-bottom: 1px solid rgba(30, 30, 30, 0.2);
+                        border-left: 1px solid rgba(30, 30, 30, 0.2);
+                        .less {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            gap: 10px;
+                            padding: 15px 15px;
+                            box-sizing: border-box;
+                            border: 2px solid rgb(79, 123, 244);
+                            border-radius: 10px;
+                            background: rgba(79, 123, 244, 0.1);
+                            height: 100%;
+                            width: 100%;
+                            .time {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 5px;
+                                .less-time {
+                                    width: 60px;
+                                    height: 25px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: rgb(255, 255, 255);
+                                    font-family: SF Pro;
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    border-radius: 5px;
+                                    background: rgb(79, 123, 244);
+                                }
+                                h3 {
+                                    color: rgb(79, 123, 244);
+                                    font-family: SF Pro;
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                }
+                            }
+                            h3 {
+                                color: rgb(79, 123, 244);
+                                font-family: SF Pro;
+                                font-size: 16px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    .plan:nth-child(7) {
+                        border-right: 1px solid rgba(30, 30, 30, 0.2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-add {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    .step {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        gap: 20px;
+        border-radius: 30px;
+        background: rgb(255, 255, 255);
+        width: 100%;
+        .title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            h2 {
+                color: rgb(79, 123, 244);
+                font-family: SF Pro;
+                font-size: 36px;
+                font-weight: 700;
+            }
+            p {
+                color: rgb(30, 30, 30);
+                font-family: SF Pro;
+                font-size: 28px;
+                font-weight: 700;
+            }
+        }
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            p {
+                color: rgb(30, 30, 30);
+                font-family: SF Pro;
+                font-size: 19px;
+                font-weight: 510;
+            }
+            input {
+                width: 435px;
+                height: 54px;
+                border-radius: 8px;
+                background: rgb(244, 244, 244);
+                border: none;
+            }
+            input::placeholder {
+                color: rgb(142, 142, 147);
+                font-family: SF Pro;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 0px 12px;
+            }
+        }
+        button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 54px;
+            border-radius: 8px;
+            background: rgb(79, 123, 244);
+            width: 100%;
+            color: rgb(255, 255, 255);
+            font-family: SF Pro;
+            font-size: 18px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+        }
+        p {
+            width: 100%;
+            color: rgb(79, 123, 244);
+            font-family: SF Pro;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    .short-inputs {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        .inputs {
+            input {
+                width: 183px;
+                height: 54px;
+                padding: 0px 12px;
+                border-radius: 8px;
+                background: rgb(244, 244, 244);
+                border: none;
+            }
+        }
+    }
+    .grade {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 54px;
+        border-radius: 8px;
+        background: rgb(79, 123, 244);
+        width: 100%;
+        color: rgb(255, 255, 255);
+        font-family: SF Pro;
+        font-size: 18px;
+        font-weight: 700;
+        border: none;
+    }
+}
